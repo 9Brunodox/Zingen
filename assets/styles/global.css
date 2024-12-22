@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &::before {
+    box-sizing: border-box;
+  }
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
 :root {
   /* Produto colors */
   --brand-gradient: linear-gradient(to right, #fc4a1a, #f7b733);
@@ -16,25 +33,28 @@
   --font-family: "Inter", serif;
 
   /* Desktop Fonts */
-  --h1-desktop: 900 6.4rem/120% var(--fonta-family);
-  --h2-desktop: 900 4.8rem/120% var(--fonta-family);
-  --h3-desktop: 900 3.2rem/120% var(--fonta-family);
-  --span-desktop: 500 1.4rem/100% var(--fonta-family);
-  --paragraph-desktop: 400 1.6rem/160% var(--fonta-family);
+  --h1-desktop: 900 6.4rem/120% var(--font-family);
+  --h2-desktop: 900 4.8rem/120% var(--font-family);
+  --h3-desktop: 900 3.2rem/120% var(--font-family);
+  --span-desktop: 500 1.4rem/100% var(--font-family);
+  --paragraph-desktop: 400 1.6rem/160% var(--font-family);
 
   /* Mobile Fonts */
-  --h1-mobile: 900 4rem/120% var(--fonta-family);
-  --h2-mobile: 900 2.4rem/120% var(--fonta-family);
-  --h3-mobile: 900 2rem/120% var(--fonta-family);
-  --span-mobile: 500 1.4rem/100% var(--fonta-family);
-  --paragraph-mobile: 400 1.6rem/160% var(--fonta-family);
+  --h1-mobile: 900 4rem/120% var(--font-family);
+  --h2-mobile: 900 2.4rem/120% var(--font-family);
+  --h3-mobile: 900 2rem/120% var(--font-family);
+  --span-mobile: 500 1.4rem/100% var(--font-family);
+  --paragraph-mobile: 400 1.6rem/160% var(--font-family);
 }
 
 html {
   font-size: 62.5%;
+  font-family: var(--paragraph-desktop);
+  color: var(--text-primary);
 }
 
 body {
+  background-color: var(--bg-color);
   & h1 {
     font: var(--h1-desktop);
   }
@@ -50,6 +70,22 @@ body {
   & p {
     font: var(--paragraph-desktop);
   }
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-primary);
+  letter-spacing: -0.64px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul[role="list"] {
+  list-style-type: none;
 }
 
 .primary-btn {
