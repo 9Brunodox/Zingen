@@ -29,15 +29,22 @@
   --text-secondary: #a1a1aa;
 
   /* Fontes */
+  --fs-sm: 1.4rem;
+  --fs-base: 1.6rem;
+  --fs-lg: 2rem;
+  --fs-2xl: 4rem;
 
-  --font-family: "Inter", serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 800
+  --ff-inter: "Inter", system-ui, sans-serif;
 
   /* Fonts Styles*/
-  --h1: 900 4rem/120% var(--font-family);
-  --h2: 900 2.4rem/120% var(--font-family);
-  --h3: 900 2rem/120% var(--font-family);
-  --span: 500 1.4rem/100% var(--font-family);
-  --paragraph: 400 1.6rem/160% var(--font-family);
+  --h1: var(--fw-bold) 4rem/120% var(--ff-inter);
+  --h2: var(--fw-bold) 2.4rem/120% var(--ff-inter);
+  --h3: var(--fw-bold) 2rem/120% var(--ff-inter);
+  --span: var(--fw-md) 1.4rem/100% var(--ff-inter);
+  --paragraph: var(--fw-base) 1.6rem/160% var(--ff-inter);
 
   /* Utility */
   --py-base: 1.6rem;
@@ -88,28 +95,6 @@ ul[role="list"] {
   list-style-type: none;
 }
 
-.primary-btn {
-  color: var(--bg-color);
-  background-color: var(--text-primary);
-  &:hover {
-    color: var(--brand-gradient);
-    background-color: var(--brand-gradient);
-  }
-}
-
-.secondary-btn {
-  color: var(--text-primary);
-  background-color: transparent;
-  border: 2px solid transparent;
-  outline: 1px solid var(--text-primary);
-  &:hover {
-    color: var(--brand-gradient);
-    background-color: transparent;
-    border: 2px solid transparent;
-    outline: 1px solid var(--brand-gradient);
-  }
-}
-
 & h1,
 & h2,
 & h3,
@@ -129,11 +114,11 @@ ul[role="list"] {
 
 @media (width >= 1280px) {
   :root {
-    --h1: 900 6.4rem/120% var(--font-family);
-    --h2: 900 4.8rem/120% var(--font-family);
-    --h3: 900 3.2rem/120% var(--font-family);
-    --span: 500 1.4rem/100% var(--font-family);
-    --paragraph: 400 1.6rem/160% var(--font-family);
+    --h1: var(--fw-bold) 6.4rem/120% var(--ff-inter);
+    --h2: var(--fw-bold) 4.8rem/120% var(--ff-inter);
+    --h3: var(--fw-bold) 3.2rem/120% var(--ff-inter);
+    --span: var(--fw-md) 1.4rem/100% var(--ff-inter);
+    --paragraph: var(--fw-base) 1.6rem/160% var(--ff-inter);
 
     --py-base: 2.4rem;
     --py-lg: 4rem;
