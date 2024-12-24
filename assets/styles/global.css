@@ -32,19 +32,19 @@
 
   --font-family: "Inter", serif;
 
-  /* Desktop Fonts */
-  --h1-desktop: 900 6.4rem/120% var(--font-family);
-  --h2-desktop: 900 4.8rem/120% var(--font-family);
-  --h3-desktop: 900 3.2rem/120% var(--font-family);
-  --span-desktop: 500 1.4rem/100% var(--font-family);
-  --paragraph-desktop: 400 1.6rem/160% var(--font-family);
+  /* Fonts Styles*/
+  --h1: 900 4rem/120% var(--font-family);
+  --h2: 900 2.4rem/120% var(--font-family);
+  --h3: 900 2rem/120% var(--font-family);
+  --span: 500 1.4rem/100% var(--font-family);
+  --paragraph: 400 1.6rem/160% var(--font-family);
 
-  /* Mobile Fonts */
-  --h1-mobile: 900 4rem/120% var(--font-family);
-  --h2-mobile: 900 2.4rem/120% var(--font-family);
-  --h3-mobile: 900 2rem/120% var(--font-family);
-  --span-mobile: 500 1.4rem/100% var(--font-family);
-  --paragraph-mobile: 400 1.6rem/160% var(--font-family);
+  /* Utility */
+  --py-base: 1.6rem;
+  --py-lg: 2.4rem;
+  --py-xl: 3.8rem;
+
+  --px-lg: 2.4rem;
 }
 
 html {
@@ -56,19 +56,19 @@ html {
 body {
   background-color: var(--bg-color);
   & h1 {
-    font: var(--h1-desktop);
+    font: var(--h1);
   }
   & h2 {
-    font: var(--h2-desktop);
+    font: var(--h2);
   }
   & h3 {
-    font: var(--h3-desktop);
+    font: var(--h3);
   }
   & span {
-    font: var(--span-desktop);
+    font: var(--span);
   }
   & p {
-    font: var(--paragraph-desktop);
+    font: var(--paragraph);
   }
 }
 
@@ -127,22 +127,18 @@ ul[role="list"] {
   }
 }
 
-@media screen and (max-width: 992px) {
-  body {
-    & h1 {
-      font: var(--h1-mobile);
-    }
-    & h2 {
-      font: var(--h2-mobile);
-    }
-    & h3 {
-      font: var(--h3-mobile);
-    }
-    & span {
-      font: var(--span-mobile);
-    }
-    & p {
-      font: var(--paragraph-mobile);
-    }
+@media (width >= 1280px) {
+  :root {
+    --h1: 900 6.4rem/120% var(--font-family);
+    --h2: 900 4.8rem/120% var(--font-family);
+    --h3: 900 3.2rem/120% var(--font-family);
+    --span: 500 1.4rem/100% var(--font-family);
+    --paragraph: 400 1.6rem/160% var(--font-family);
+
+    --py-base: 2.4rem;
+    --py-lg: 4rem;
+    --py-xl: 8rem;
+
+    --px-lg: 3.2rem;
   }
 }
