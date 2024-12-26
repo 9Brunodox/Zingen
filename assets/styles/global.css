@@ -87,6 +87,9 @@ h3 {
 }
 
 a {
+  font-size: var(--fs-base);
+  font-weight: var(--fw-md);
+  font-family: var(--ff-inter);
   text-decoration: none;
   color: inherit;
 
