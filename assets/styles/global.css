@@ -126,6 +126,11 @@ label {
   }
 }
 
+img{
+  max-width: 100%;
+  display: inline-block;
+}
+
 @media (width >= 1280px) {
   :root {
     --h1: var(--fw-bold) 6.4rem/120% var(--ff-inter);
