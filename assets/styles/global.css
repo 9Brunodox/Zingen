@@ -57,7 +57,7 @@
 
 html {
   font-size: 62.5%;
-  font-family: var(--paragraph-desktop);
+  font-family: var(--ff-inter);
   color: var(--text-primary);
 }
 
