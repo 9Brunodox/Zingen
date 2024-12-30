@@ -39,6 +39,56 @@
         background: radial-gradient(var(--text-secondary), var(--surface-color) 70%);
     }
 
+    & li{
+        color: var(--text-secondary);
+        background: url(../icons/Check.svg) no-repeat;
+        background-size: 2.4rem 2.4rem;
+        padding-left: 3.2rem;
+        font-size: var(--fs-base);
+        font-weight: var(--fw-base);
+        font-family: var(--ff-inter);
+    }
+
+    & ul + small{
+        display: block;
+        margin-top: 2.4rem;
+        font-size: 1.4rem;
+        color: var(--text-secondary);
+    }
+
+    & .premium{
+        position: relative;
+
+        & .card{
+            padding-top: 6.8rem;
+            & > span{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 1.2rem 3.2rem;
+                background: var(--brand-gradient);
+                
+                border-top-left-radius: 2.4rem;
+                border-bottom-right-radius: 2.4rem;
+                
+                font: 600 var(--fm-sm) var(--ff-inter);
+                text-transform: uppercase;
+                letter-spacing: 0.128em;
+            }
+        }
+
+        padding: 2px;
+
+        &::before{
+            content: '';
+            background: var(--brand-gradient);
+            position: absolute;
+            inset: 0;
+            border-radius: 2.4rem;
+            z-index: -1;
+        }
+    }
+
     @media (width >= 1280px){
         --fs-price: 4rem;
 
@@ -46,5 +96,18 @@
             max-width: 80rem;
             margin-inline: auto;
         }
+
+        & .premium .card{
+            padding-bottom: 9.8rem;
+        }
+
+        .btn-md {
+            padding: 1.2rem 2.4rem;
+            font-size: var(--fs-base);
+          }
+      
+          & .card:nth-child(3) .separator {
+            margin-block: 2.4rem;
+          }
     }
 }
