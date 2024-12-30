@@ -59,6 +59,8 @@ html {
   font-size: 62.5%;
   font-family: var(--ff-inter);
   color: var(--text-primary);
+
+  overflow-x: hidden;
 }
 
 body {
@@ -107,17 +109,6 @@ a {
 
 ul[role="list"] {
   list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-span,
-p,
-label {
-  &:hover {
-    color: var(--brand-gradient);
-  }
 }
 
 .icon {
