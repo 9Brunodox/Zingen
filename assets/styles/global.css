@@ -67,6 +67,7 @@ html {
 
 body {
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 h1 {
@@ -99,13 +100,12 @@ a {
   text-decoration: none;
   color: inherit;
 
-  &:hover{
+  &:hover {
     background: var(--brand-gradient);
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
   }
 }
 
@@ -119,7 +119,7 @@ ul[role="list"] {
   }
 }
 
-img{
+img {
   max-width: 100%;
   display: inline-block;
 }
